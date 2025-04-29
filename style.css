@@ -239,6 +239,12 @@ body {
 
 }
 
+.bar-productos-section{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
 .bar-productos-section h2 {
     display: flex;
     font-size: 5rem;
@@ -247,6 +253,7 @@ body {
 }
 
 .bar-productos {
+justify-content: center;
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -261,6 +268,7 @@ body {
 }
 
 .bar-productos a {
+    flex-direction: column;
     display: flex;
     text-decoration: none;
     color: black;
@@ -457,6 +465,7 @@ body {
 }
 
 .productos-scroll {
+    justify-content: center;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
@@ -518,9 +527,11 @@ iframe {
     }
 
     .text-store {
-        font-size: 2rem;
-        margin: 2rem;
-        justify-content: center;
+        font-size: 1.75rem;
+        margin: 1rem;
+        padding-left: 2rem;
+      justify-content: center;
+      display: flex;
     }
 
     .productos-apple h2 {
@@ -533,6 +544,10 @@ iframe {
         flex-direction: column;
         padding: 2rem;
     }
+
+iframe{
+    border-radius: 5px;
+}
 
     .video-container {
         margin: 2rem auto;
@@ -549,6 +564,10 @@ iframe {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+.novedades-title{
+    font-size: 1.75rem;
+}
 
     .novedades {
         margin: 0;
