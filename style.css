@@ -239,8 +239,8 @@ body {
 
 }
 
-.bar-productos-section{
-    justify-content: center;
+.bar-productos-section {
+
     display: flex;
     align-items: center;
 }
@@ -253,7 +253,7 @@ body {
 }
 
 .bar-productos {
-justify-content: center;
+    justify-content: center;
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -465,7 +465,7 @@ justify-content: center;
 }
 
 .productos-scroll {
-    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
@@ -530,8 +530,8 @@ iframe {
         font-size: 1.75rem;
         margin: 1rem;
         padding-left: 2rem;
-      justify-content: center;
-      display: flex;
+        justify-content: center;
+        display: flex;
     }
 
     .productos-apple h2 {
@@ -545,9 +545,9 @@ iframe {
         padding: 2rem;
     }
 
-iframe{
-    border-radius: 5px;
-}
+    iframe {
+        border-radius: 5px;
+    }
 
     .video-container {
         margin: 2rem auto;
@@ -555,7 +555,7 @@ iframe{
     }
 
     .bar-productos-section {
-        
+
         gap: 1rem;
     }
 
@@ -565,9 +565,9 @@ iframe{
         justify-content: center;
     }
 
-.novedades-title{
-    font-size: 1.75rem;
-}
+    .novedades-title {
+        font-size: 1.75rem;
+    }
 
     .novedades {
         margin: 0;
@@ -586,12 +586,12 @@ iframe{
         margin: 0 auto;
     }
 
-    .card{
-        flex: 0 0 330px;
+    .card {
+        flex: 0 0 320px;
         height: 395px;
     }
 
-    .cards{
+    .cards {
         flex: 0 0 330px;
         height: 345px;
     }
@@ -607,27 +607,29 @@ iframe{
         margin: 1rem;
         text-align: center;
     }
-    .title-cards{
+
+    .title-cards {
         font-size: 1.75rem;
     }
 
-    .links{
+    .links {
         font-size: 1.50rem;
     }
 
-    .texts{
+    .texts {
         font-size: 1.20rem;
     }
-    
-    .text{
+
+    .text {
         font-size: 1.25rem;
     }
-    .title-card{
+
+    .title-card {
         margin-bottom: 0.25rem;
         font-size: 2rem;
     }
-    
-    .link{
+
+    .link {
         font-size: 1.35rem;
     }
 }
