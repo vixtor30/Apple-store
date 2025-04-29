@@ -1,865 +1,889 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch- Apple</title>
     <style>
-     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-.goog-te-banner-frame, 
-.goog-te-gadget {
-    display: none !important;
-}
+        .goog-te-banner-frame,
+        .goog-te-gadget {
+            display: none !important;
+        }
 
 
-html{
-font-size: 62.5%;
-font-family: Poppins;
-background-color: whitesmoke;
-flex-wrap: wrap;
+        html {
+            font-size: 62.5%;
+            font-family: Poppins;
+            background-color: whitesmoke;
+            flex-wrap: wrap;
 
-}
+        }
 
-body{
-margin: 0;
-}
+        body {
+            margin: 0;
+        }
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-/**************
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /**************
 * UTILIDADES *
 **************/
 
-.container{
-max-width: 120rem;
-margin: 0 auto;
-}
+        .container {
+            max-width: 120rem;
+            margin: 0 auto;
+        }
 
-/**********
+        /**********
 * HEADER *
 **********/
-.container-hero{
-background-color: rgb(68, 68, 68) ;
+        .container-hero {
+            background-color: rgb(68, 68, 68);
 
-}
+        }
 
-.hero{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-padding: 1.1rem 0;
-}
+        .hero {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1.1rem 0;
+        }
 
-.customer-support{
-display: flex;
-align-items: center;
-gap: 2rem;
-}
+        .customer-support {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
 
-.customer-support i{
-font-size: 2.8rem;
-}
+        .customer-support i {
+            font-size: 2.8rem;
+        }
 
-.content-customer-support{
-display: flex;
-flex-direction: column;
-}
+        .content-customer-support {
+            display: flex;
+            flex-direction: column;
+        }
 
-.conteiner-logo{
-display: flex;
-align-items: center;
-gap: .5rem;
+        .conteiner-logo {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
 
-}
+        }
 
-.conteiner-logo i{
-font-size: 3rem;
+        .conteiner-logo i {
+            font-size: 3rem;
 
-}
+        }
 
 
-.conteiner-logo h1 a{ color: gray;
-text-decoration: none;
-font-size: 3rem;
-text-transform: uppercase;
-letter-spacing: -1px;
+        .conteiner-logo h1 a {
+            color: gray;
+            text-decoration: none;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
 
-}
+        }
 
-.container-bag{
-display: flex;
-gap: 1rem;
-cursor: pointer;
-}
+        .container-bag {
+            display: flex;
+            gap: 1rem;
+            cursor: pointer;
+        }
 
-.container-bag .fa-bag-shopping{
-font-size: 3rem;
-padding: 2.4rem;
-border-right: 1px solid grey;
-}
+        .container-bag .fa-bag-shopping {
+            font-size: 3rem;
+            padding: 2.4rem;
+            border-right: 1px solid grey;
+        }
 
-/**********
+        /**********
 * NAVBAR *
 **********/
-.container-navbar{background-color: rgb(18, 18, 18);}
-
-.navbar{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-
-
-}
-
-.navbar .div .fa-bars{
-display: flex;
-color: gray;
-}
-
-.menu{
-display: flex;
-gap: 5.6rem;
-}
-
-.menu li{
-list-style: none;
-}
-
-.menu a{
-text-decoration: none ;
-font-size: 1.1rem;
-color: gainsboro;
-font-weight: 450;
-position: relative;
-
-
-}
-
-.menu a img{
+        .container-navbar {
+            background-color: rgb(18, 18, 18);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
 
-display: flex;
-margin-top: -6px;
-}
-
-.menu .fa-apple{
-font-size: 2rem;
-margin-top: -3px;
-display: flex;
-color: gainsboro;
-}
-
-.menu .fa-bag-shopping{
-font-size: 2rem;
-margin-top: -3px;
-display: flex;
-}
-
-.menu a:hover{
-color:  whitesmoke;
-transition: all 1.s ease;
-opacity: 0s;
-
-}
-
-.menu .fa-bag-shopping:hover{
-color:  whitesmoke;
-transition: all 1.s ease;
-opacity: 0s;}
-
-.menu a::hover{
-opacity: 1;
-}
-
-.text-arriba{
-background-color: rgb(29, 29, 31);
-color: whitesmoke;
-display: flex;
-justify-content: center;
-padding: 2rem;
-font-size: 1.5rem ;
-}
-.iPhone-16-pro{
-width: 100%; height: auto;
-background-color: black;
-
-
-}
-
-.container-home h1{
-display: flex;
-justify-content: center;
-margin-top:  2rem;
-color: rgb(218, 218, 218);
-font-size: 2.5rem;
-}
-
-.container-home article{
-background-color:black ;
-}
-
-.container-home article img{
-width: 90px;
-
-}
-
-.container-productos{
-
-gap: 2px;
-flex: 1;
-background-color: whitesmoke;
-}
-
-.bar-productos-section{
-display: flex;
-justify-content: center;
-gap: 1.8rem ;
-padding: 20px;
-margin-top: 5rem;
-}
-
-.text-store{
-display: flex;
-flex: 1;
-gap: 5px;
-font-size: 3rem;
-margin: 40px;
-margin-right: 55rem;
-padding-left: 5rem ;
-
-}
-
-.text-store h2{
-font-weight: 600;
-
-}
-
-
-
-article{
-flex: 1;
-}
-
-.productos-apple{
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: space-evenly;
-display: flex;
-overflow-x: hidden;
-align-items: center;
-flex: 1;
-
-padding-top:50px ;
-padding-bottom: 50px;
-background-color: whitesmoke;
-}
-
-.title-productos{
-font-weight: 600;
- margin-bottom: 3rem;
- margin-top: 3rem;
- padding-left: 3rem;
-font-size: 4rem;
-color: rgb(20, 20, 20);
-}
-
-.productos-scroll {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  gap: 2.5rem;
-  padding-bottom: 1rem;
-  width: 100%;
-  scroll-behavior: smooth;
-}
-
-.productos-scroll::-webkit-scrollbar {
-    display: none;}
-
-.gold div{
-    overflow: hidden;
-display: flex;
-flex-direction: column;
-justify-items: center;
-margin: 2.5rem;
-
-}
-
-.gold{
-    padding-left: 4rem;
-   padding-right: 6rem;
-justify-content: center;
-display: flex;
-align-items: center;
-}
-
-.gold img{
-    width: 25rem;
-justify-items: center;
-}
-
-.gold h3{
-    display: flex;
-text-align: center;
-font-weight: 600;
-font-size: 2.45rem;
-margin-top: 1rem;
-margin-bottom: 1.2rem ;
-
-}
-
-.gold p{
-    display: flex;
-    text-align: center;
-font-size: 1.5rem;
-margin-bottom: 1.5rem ;
-
-}
-
-.gold strong{ margin: 0;
-    text-align: center;
-font-size: 1.39rem;
-font-weight: 600;
-display: flex;
-}
-
-.button p {
-background-color: rgb(40, 40, 255);
-border-radius: 18px;
-padding: 10px 15px 10px;
-display: flex;
-
-
-
-color: white;
-}
-
-.novedades{
-display: flex;
-margin-top: -50rem;
-margin: 40px;
-padding: 5rem;
-flex-direction: column;
-}
-
-.novedades-title{
-    margin-left: 2rem;
-display: flex;
-font-size: 4rem;
-}
-
-.container-card{
-margin: 0;
-gap: 25px;
-   display: flex;
-overflow-x: auto;
-scrollbar-width: none;
-padding: 1.5rem 0;    
-}
-
-.card{
-position: relative;
-flex: 0 0 309px;
-height: 250px;
-overflow: hidden;
-margin-left: 1.5rem;
-border-radius: 18px;
-box-shadow: 2px 4px 12px rgb(189, 189, 189);
-
-}
-
-.image-card{
-width: 100%;
-}
-
-.body-card{
-position: absolute;
-top: 0;
-padding: 28px;
-font-family: poppins;
-font-weight: 600;
-}
-
-.title-card{
-font-size: 2.45rem;
-margin-bottom: 0.75rem;
-}
-
-.link{
-font-size: 1.6rem
-}
-
-.text{
-font-size: 1.3rem;
-font-weight: 400;
-}
-
-.video{
-border-radius: 18px;
-display: flex;
-}
-
-
-.container-cards{
-margin: 0;
-gap: 25px;
-   display: flex;
-overflow-x: auto;
-scrollbar-width: none;
-padding: 1.5rem 0;    
-}
-
-.cards{
-position: relative;
-flex: 0 0 375px;
-height: 650px;
-overflow: hidden;
-margin-left: 0rem;
-margin-right: 0;
-border-radius: 18px;
-box-shadow: 2px 4px 12px rgb(189, 189, 189);
-
-}
-
-.image-cards{
-width: 100%;
-}
-
-.body-cards{
-position: absolute;
-top: 0;
-padding: 28px;
-font-family: poppins;
-font-weight: 600;
-}
-
-.title-cards{
-font-size: 2.50rem;
-margin-bottom: 0.30rem;
-font-weight: 600;
-}
-
-.links{
-font-size: 2.2rem
-}
-
-.texts{
-font-size: 1.55rem;
-font-weight: 600;
-}
-
-.video-container{
-    margin-top: 5.2rem;
-    margin-left:8rem;
-    display: flex;
-   aspect-ratio: 1440/ 1080;
-    border-radius: 5px;
-    width: 85%;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px gray;
-    margin-bottom: 15rem;
-}
-
-iframe{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 10px;
-    
-    
-}
-
-
-/* ---------------------------- */
-/* RESPONSIVE - TABLET (768px)  */
-/* ---------------------------- */
-@media (max-width: 768px) {
-
-.hero, .navbar, .bar-productos-section, .productos-apple, .novedades {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.container-hero, .container-navbar {
-    padding: 1rem;
-}
-
-.text-store {
-    margin: 2rem 0;
-    padding: 0;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-right: 0;
-}
-
-.gold img {
-    width: 20rem;
-}
-
-.gold h3 {
-    font-size: 2rem;
-}
-
-.gold p, .gold strong {
-    font-size: 1.2rem;
-}
-
-.menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.menu a {
-    font-size: 1.4rem;
-}
-
-.video-container {
-    margin: 2rem;
-    width: 90%;
-    margin-bottom: 5rem;
-}
-
-.cards, .card {
-    flex: 0 0 80%;
-}
-}
-
-/* ---------------------------- */
-/* RESPONSIVE - MOBILE (480px)  */
-/* ---------------------------- */
-@media (max-width: 480px) {
-
-    .media {
-        flex-direction: column;
-        display: flex;
-    }
-
-    .media h2 {
-        font-size: 4rem;
-    }
-    .media h3 {
-        font-size: 1;
-    }
-
-.hero, .navbar, .bar-productos-section, .productos-apple, .novedades {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.conteiner-logo h1 a {
-    font-size: 2.2rem;
-}
-
-.container-bag .fa-bag-shopping {
-    font-size: 2.2rem;
-    padding: 1rem;
-}
-
-.customer-support i {
-    font-size: 2rem;
-}
-
-.container-home h1 {
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-.text-store {
-    font-size: 2rem;
-    margin: 1rem 0;
-    padding: 0;
-}
-
-.gold img {
-    width: 15rem;
-}
-
-.gold h3 {
-    font-size: 1.8rem;
-}
-
-.gold p, .gold strong {
-    font-size: 1rem;
-}
-
-.menu {
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.menu a {
-    font-size: 1.2rem;
-}
-
-.video-container {
-    margin: 1rem;
-    width: 95%;
-    margin-bottom: 5rem;
-}
-
-.cards, .card {
-    flex: 0 0 90%;
-}
-}
-
-@media (max-width: 768px) {
-  .mac-slogan {
-    display: none;
-  }
-}
+
+        }
+
+        .navbar .div .fa-bars {
+            display: flex;
+            color: gray;
+        }
+
+        .menu {
+            display: flex;
+            gap: 5.6rem;
+        }
+
+        .menu li {
+            list-style: none;
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: gainsboro;
+            font-weight: 450;
+            position: relative;
+
+
+        }
+
+        .menu a img {
+
+            display: flex;
+            margin-top: -6px;
+        }
+
+        .menu .fa-apple {
+            font-size: 2rem;
+            margin-top: -3px;
+            display: flex;
+            color: gainsboro;
+        }
+
+        .menu .fa-bag-shopping {
+            font-size: 2rem;
+            margin-top: -3px;
+            display: flex;
+        }
+
+        .menu a:hover {
+            color: whitesmoke;
+            transition: all 1.s ease;
+            opacity: 0s;
+
+        }
+
+        .menu .fa-bag-shopping:hover {
+            color: whitesmoke;
+            transition: all 1.s ease;
+            opacity: 0s;
+        }
+
+        .menu a::hover {
+            opacity: 1;
+        }
+
+        .text-arriba {
+            background-color: rgb(29, 29, 31);
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            font-size: 1.5rem;
+        }
+
+        .iPhone-16-pro {
+            width: 100%;
+            height: auto;
+            background-color: black;
+
+
+        }
+
+        .container-home h1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            color: rgb(218, 218, 218);
+            font-size: 2.5rem;
+        }
+
+        .container-home article {
+            background-color: black;
+        }
+
+        .container-home article img {
+            width: 90px;
+
+        }
+
+        .container-productos {
+
+            gap: 2px;
+            flex: 1;
+            background-color: whitesmoke;
+        }
+
+        .bar-productos-section {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            padding: 20px;
+            margin-top: 5rem;
+        }
+
+        .text-store {
+            display: flex;
+            flex: 1;
+            gap: 5px;
+            font-size: 3rem;
+            margin: 40px;
+            margin-right: 55rem;
+            padding-left: 5rem;
+
+        }
+
+        .text-store h2 {
+            font-weight: 600;
+
+        }
+
+
+
+        article {
+            flex: 1;
+        }
+
+        .productos-apple {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            display: flex;
+            overflow-x: hidden;
+            align-items: center;
+            flex: 1;
+
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: whitesmoke;
+        }
+
+        .title-productos {
+            font-weight: 600;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+            padding-left: 3rem;
+            font-size: 4rem;
+            color: rgb(20, 20, 20);
+        }
+
+        .productos-scroll {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            gap: 2.5rem;
+            padding-bottom: 1rem;
+            width: 100%;
+            scroll-behavior: smooth;
+        }
+
+        .productos-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gold div {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            margin: 2.5rem;
+
+        }
+
+        .gold {
+            padding-left: 4rem;
+            padding-right: 6rem;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .gold img {
+            width: 25rem;
+            justify-items: center;
+        }
+
+        .gold h3 {
+            display: flex;
+            text-align: center;
+            font-weight: 600;
+            font-size: 2.45rem;
+            margin-top: 1rem;
+            margin-bottom: 1.2rem;
+
+        }
+
+        .gold p {
+            display: flex;
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+
+        }
+
+        .gold strong {
+            margin: 0;
+            text-align: center;
+            font-size: 1.39rem;
+            font-weight: 600;
+            display: flex;
+        }
+
+        .button p {
+            background-color: rgb(40, 40, 255);
+            border-radius: 18px;
+            padding: 10px 15px 10px;
+            display: flex;
+
+
+
+            color: white;
+        }
+
+        .novedades {
+            display: flex;
+            margin-top: -50rem;
+            margin: 40px;
+            padding: 5rem;
+            flex-direction: column;
+        }
+
+        .novedades-title {
+            margin-left: 2rem;
+            display: flex;
+            font-size: 4rem;
+        }
+
+        .container-card {
+            margin: 0;
+            gap: 25px;
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            padding: 1.5rem 0;
+        }
+
+        .card {
+            position: relative;
+            flex: 0 0 309px;
+            height: 250px;
+            overflow: hidden;
+            margin-left: 1.5rem;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(189, 189, 189);
+
+        }
+
+        .image-card {
+            width: 100%;
+        }
+
+        .body-card {
+            position: absolute;
+            top: 0;
+            padding: 28px;
+            font-family: poppins;
+            font-weight: 600;
+        }
+
+        .title-card {
+            font-size: 2.45rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .link {
+            font-size: 1.6rem
+        }
+
+        .text {
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        .video {
+            border-radius: 18px;
+            display: flex;
+        }
+
+
+        .container-cards {
+            margin: 0;
+            gap: 25px;
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            padding: 1.5rem 0;
+        }
+
+        .cards {
+            position: relative;
+            flex: 0 0 375px;
+            height: 650px;
+            overflow: hidden;
+            margin-left: 0rem;
+            margin-right: 0;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(189, 189, 189);
+
+        }
+
+        .image-cards {
+            width: 100%;
+        }
+
+        .body-cards {
+            position: absolute;
+            top: 0;
+            padding: 28px;
+            font-family: poppins;
+            font-weight: 600;
+        }
+
+        .title-cards {
+            font-size: 2.50rem;
+            margin-bottom: 0.30rem;
+            font-weight: 600;
+        }
+
+        .links {
+            font-size: 2.2rem
+        }
+
+        .texts {
+            font-size: 1.55rem;
+            font-weight: 600;
+        }
+
+        .video-container {
+            margin-top: 5.2rem;
+            margin-left: 8rem;
+            display: flex;
+            aspect-ratio: 1440/ 1080;
+            border-radius: 5px;
+            width: 85%;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px gray;
+            margin-bottom: 15rem;
+        }
+
+        iframe {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+
+
+        }
+
+
+
+        /* ---------------------------- */
+        /* RESPONSIVE - TABLET (768px)  */
+        /* ---------------------------- */
+        @media (max-width: 768px) {
+
+            .hero,
+            .navbar,
+            .bar-productos-section,
+            .productos-apple,
+            .novedades {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .container-hero,
+            .container-navbar {
+                padding: 1rem;
+            }
+
+            .text-store {
+                margin: 2rem 0;
+                padding: 0;
+                font-size: 2.5rem;
+                text-align: center;
+                margin-right: 0;
+            }
+
+            .gold img {
+                width: 20rem;
+            }
+
+            .gold h3 {
+                font-size: 2rem;
+            }
+
+            .gold p,
+            .gold strong {
+                font-size: 1.2rem;
+            }
+
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+            }
+
+            .menu a {
+                font-size: 1.4rem;
+            }
+
+            .video-container {
+                margin: 2rem;
+                width: 90%;
+                margin-bottom: 5rem;
+            }
+
+            .cards,
+            .card {
+                flex: 0 0 80%;
+            }
+
+            .novedades-title {
+                font-size: 2.5rem;
+            }
+
+        }
+
+
+        /* ===================
+     TABLETS (769px a 1024px)
+  =================== */
+        @media (min-width: 769px) and (max-width: 1024px) {
+
+            .hero,
+            .navbar {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+
+            .menu {
+                gap: 3rem;
+            }
+
+            .productos-apple h2 {
+                font-size: 3.5rem;
+                margin: 2rem auto;
+                text-align: center;
+            }
+
+            .text-store {
+                font-size: 2.5rem;
+                margin: 2rem;
+                justify-content: center;
+            }
+
+            .gold {
+
+                gap: 2rem;
+            }
+
+            .cards {
+                flex: 0 0 300px;
+                height: 580px;
+            }
+
+            .container-card,
+            .container-cards {
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .menu {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+                padding: 1rem;
+            }
+
+            .menu a {
+                font-size: 1.3rem;
+            }
+
+            .conteiner-logo h1 a {
+                font-size: 2.2rem;
+            }
+
+            .container-bag {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .mac-slogan {
+                display: none;
+            }
+        }
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-         <link rel="icon" href="Imagenes/icon-apple.png" type="image/png">
+    </style>
+    <link rel="icon" href="Imagenes/icon-apple.png" type="image/png">
 </head>
 
 
 <body>
     <div id="google_translate_element"></div>
     <header>
-     <div class="container-navbar">
-          <nav class="navbar container" translate="no">
-            <div class="container hero">
-                     <i class="fa-solid fa-bars"></i>
-                <ul class="menu">
-                    <li><a href="index.html"> Home</a></li>
-                    <li><a href="Mac.html">Mac</a></li>
-                    <li><a href="iPad.html">iPad</a></li>
-                    <li><a href="iPhone.html">iPhone</a></li>
-                    <li><a href="Watch.html">Watch</a></li>
+        <div class="container-navbar">
+            <nav class="navbar container" translate="no">
+                <div class="container hero">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <i class="fa-brands fa-apple" style="color: gray;"></i>
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="Mac.html">Mac</a></li>
+                        <li><a href="iPad.html">iPad</a></li>
+                        <li><a href="iPhone.html">iPhone</a></li>
+                        <li><a href="Watch.html">Watch</a></li>
 
-                    <li><a href=""> <i class="fa-solid fa-bag-shopping" style="color: gray;"></i> </a></li>
+                        <li><a href=""> <i class="fa-solid fa-bag-shopping" style="color: gray;"></i> </a></li>
 
-                </ul>
-            </div>
-                
+                    </ul>
+                </div>
+
             </nav>
         </div>
- 
+
     </header>
-  
-  <div class="media" style="margin-top: 5rem; margin-bottom: 5rem; justify-items: center; display: flex;">
-    <h2 style="font-size: 6rem; margin-left:5rem;">Apple Watch</h2> 
 
-    <h3 class="mac-slogan" style="font-size: 2rem; margin-left: 50rem; padding-top:20px ;" > The ultimate device <br> for a healthy life. </h3> </div>
+    <div class="media" style="margin-top: 5rem; margin-bottom: 5rem; justify-items: center; display: flex;">
+        <h2 style="font-size: 6rem; margin-left:5rem;">Apple Watch</h2>
 
-
-<div class="video-container" style="margin-top: -2rem;">
-
-<iframe src="videos/apple watch.mp4" frameborder="0" allow="autoplay"></iframe>
-
-</div>
-
-
-
-<div style="margin-top: 5rem;">
-    <div class="novedades-title">
-        <h3>Get to know Apple Watch.</h3>
-       </div>
- <div class="container-cards" style="padding-left: 3rem;">
-    <article class="cards">
-        <img src="imagenes apple watch/feature_health__b2yo83wkzoaa_large.jpg"class="image-cards">
-        <section class="body-cards" style="color: white;">
-            <p class="texts">
-                Healt
-            </p>
-            <h3 class="title-cards" style="color: white;">
-                Knows you by heart.
-            </h3>
-        </section>
-    </article>
-
-    <article class="cards">
-        <img src="imagenes apple watch/feature_fitness__b5owsglf0ieu_large.jpg"class="image-cards">
-        <section class="body-cards" >
-            <p class="texts">
-            Fitness
-            </p>
-            <h3 class="title-cards">
-                Every move counts.
-            </h3>
-           
-            
-        </section>
-    </article>
-
-    <article class="cards">
-        <img src="imagenes apple watch/feature_connectivity__cwtqydvy2laq_large.jpg"class="image-cards">
-        <section class="body-cards">
-            <p class="texts">
-Connectivity
-            </p>
-            <h3 class="title-cards">
-                The rigth call for <br> staying in touch.
-            </h3>
-            
-            
-        </section>
-    </article>
-
-    <article class="cards">
-        <img src="imagenes apple watch/feature_watch_and_iphone__fiq5g9njy5qy_large.jpg"class="image-cards">
-        <section class="body-cards">
-            <p class="texts">Apple Watch + iPhone</p>
-            <h3 class="title-cards">
-                Dynamic duo.
-            </h3>
-        </section>
-    </article>
-
-    <article class="cards">
-        <img src="imagenes apple watch/feature_personalization__f8bl9mx85j22_large.jpg"class="image-cards">
-        <section class="body-cards">
-            <p class="texts">Personalization</p>
-            <h3 class="title-cards">
-            Make it you-nike.
-            </h3>
-            
-        </section>
-    </article>
-
- </div>
-
-
-
-    <div class="title-productos">
-        <h2> Explore the lineup.</h2>
+        <h3 class="mac-slogan" style="font-size: 2rem; margin-left: 50rem; padding-top:20px ;"> The ultimate device <br>
+            for a healthy life. </h3>
     </div>
-    
-        <div class="productos-apple">
-      <div class="productos-scroll">
-          <div class="gold">
-    
-          
-            <div class="gold">
-                <img src="imagenes apple watch/product_se__c83w8hz9gre6_large.png" width="200" >   
-                <h3>Apple Watch SE</h3> 
-                <p style="text-align: center;"> All the essentials. <br>
-                    Light on price.</p>
-                <strong>From $249 or $20.75/mo. for 12 mo.*</strong>
-        
-                <div class="button">
-                    <p>Learn more</p>
-                </div>
-        
-                    </div>
-        
-                <div class="gold">
-                    <img src="imagenes apple watch/product_s10__c724044usymq_large.png" width="200">   
-                    <h3>Apple Watch Series 10</h3> 
-                    <p style="text-align: center;"> Thinnest. Biggest display. <br> Advanced health features.</p>
-                    <strong>From $799 or $33.29/mo. for 24 mo.**</strong>
-        
-                    <div class="button">
-                        <p>Learn more</p>
-                    </div>
-                        </div>
-                        
-                        <div class="gold">
-                            <img src="imagenes apple watch/product_u2__hedpiz396nue_large.png" width="200">
-                            <h3>Apple Watch Ultra 2</h3>
-                            <p style="text-align: center;">The ultimate sports <br>
-                                and adventure watch.</p>
-                            <strong>From $799 or $66.58/mo. for 12 mo.*</strong>
-        
-                            <div class="button">
-                                <p>Learn more</p>
-                            </div>
-                        </div>
 
-                        
-                    
-      </div>
+
+    <div class="video-container" style="margin-top: -2rem;">
+
+        <iframe src="videos/apple watch.mp4" frameborder="0" allow="autoplay"></iframe>
+
+    </div>
+
+
+
+    <div style="margin-top: 5rem;">
+        <div class="novedades-title">
+            <h3>Get to know Apple Watch.</h3>
+        </div>
+        <div class="container-cards" style="padding-left: 3rem; padding-right: 3rem;">
+            <article class="cards">
+                <img src="imagenes apple watch/feature_health__b2yo83wkzoaa_large.jpg" class="image-cards">
+                <section class="body-cards" style="color: white;">
+                    <p class="texts">
+                        Healt
+                    </p>
+                    <h3 class="title-cards" style="color: white;">
+                        Knows you by heart.
+                    </h3>
+                </section>
+            </article>
+
+            <article class="cards">
+                <img src="imagenes apple watch/feature_fitness__b5owsglf0ieu_large.jpg" class="image-cards">
+                <section class="body-cards">
+                    <p class="texts">
+                        Fitness
+                    </p>
+                    <h3 class="title-cards">
+                        Every move counts.
+                    </h3>
+
+
+                </section>
+            </article>
+
+            <article class="cards">
+                <img src="imagenes apple watch/feature_connectivity__cwtqydvy2laq_large.jpg" class="image-cards">
+                <section class="body-cards">
+                    <p class="texts">
+                        Connectivity
+                    </p>
+                    <h3 class="title-cards">
+                        The rigth call for <br> staying in touch.
+                    </h3>
+
+
+                </section>
+            </article>
+
+            <article class="cards">
+                <img src="imagenes apple watch/feature_watch_and_iphone__fiq5g9njy5qy_large.jpg" class="image-cards">
+                <section class="body-cards">
+                    <p class="texts">Apple Watch + iPhone</p>
+                    <h3 class="title-cards">
+                        Dynamic duo.
+                    </h3>
+                </section>
+            </article>
+
+            <article class="cards">
+                <img src="imagenes apple watch/feature_personalization__f8bl9mx85j22_large.jpg" class="image-cards">
+                <section class="body-cards">
+                    <p class="texts">Personalization</p>
+                    <h3 class="title-cards">
+                        Make it you-nike.
+                    </h3>
+
+                </section>
+            </article>
+
         </div>
 
-</div>
 
-<div class="novedades-title">
-    <h3>Why Apple is the best <br>
-        place to buy Apple Watch.</h3>
-   </div>
 
-       <div class="container-card" style="margin-bottom: 2rem; padding-right: 2rem;">
-        <article class="card" style="background-color: white;">
-            <section class="body-card" style="background-color: white;">
-             <img src="imagenes ipad/creditcard_elevated_b70609ee9.svg" alt="" width="30px">
-                <h3 class="title-card">   Pay over time, interest‑free.  </h3>
-                <p class="text"  >
-                 When you choose to check out with Apple Card Monthly Installments
-                </p>
-                
-            </section>
-        </article>
+        <div class="title-productos">
+            <h2> Explore the lineup.</h2>
+        </div>
 
-        <article class="card" style="background-color: white;">
-            <section class="body-card" style="background-color: white;">
-             <img src="imagenes ipad/arrow.2.squarepath.devices_elevated_e5bf7d99f.svg" alt="" width="30px">
-                <h3 class="title-card"> 
-                    Save with Apple Trade In. </h3>
-                <p class="text"  >
-                    Get up to $165 toward your next Apple Watch when you trade in an eligible device.
-                </p>
-                
-            </section>
-        </article>
+        <div class="productos-apple">
+            <div class="productos-scroll">
+                <div class="gold">
 
-        <article class="card" style="background-color: white;">
-            <section class="body-card" style="background-color: white;">
-             <img src="imagenes/icon_carrier_deals__bv35t3q8kbjm_large.png" alt="" width="30px">
-                <h3 class="title-card" style="font-size: 1.75rem;">   Apple. Your one-stop shop for incredible carrier deals.  </h3>
-                <p class="text"  >
-                    Get up to $1000 in credit on a new iPhone with AT&T, Boost Mobile, T‑Mobile, or Verizon. Trade‑in may be required.14 
-                </p>
-                
-            </section>
-        </article>
 
-        <article class="card" style="background-color: white;">
-            <section class="body-card" style="background-color: white;">
-             <img src="imagenes ipad/app.applestore_elevated_60f367e42.svg" alt="" width="30px">
-                <h3 class="title-card" style="font-size: 2rem;">  Explore a shopping experience designed around you.  </h3>
-                <p class="text"  >
-                    Use the Apple Store app to get a more personal way to shop.
-                </p>
-                
-            </section>
-        </article>
+                    <div class="gold">
+                        <img src="imagenes apple watch/product_se__c83w8hz9gre6_large.png" width="200">
+                        <h3>Apple Watch SE</h3>
+                        <p style="text-align: center;"> All the essentials. <br>
+                            Light on price.</p>
+                        <strong>From $249 or $20.75/mo. for 12 mo.*</strong>
 
-        <article class="card" style="background-color: white;">
-            <section class="body-card" style="background-color: white;">
-             <img src="imagenes ipad/person.macwindow_elevated_f95ad4d04.svg" alt="" width="30px">
-                <h3 class="title-card">  Shop live with a Specialist. </h3>
-                <p class="text"  >
-                    Let us guide you live over video and answer all of your questions.
-                </p>
-                
-            </section>
-        </article>
+                        <div class="button">
+                            <p>Learn more</p>
+                        </div>
 
-       </div>
+                    </div>
+
+                    <div class="gold">
+                        <img src="imagenes apple watch/product_s10__c724044usymq_large.png" width="200">
+                        <h3>Apple Watch Series 10</h3>
+                        <p style="text-align: center;"> Thinnest. Biggest display. <br> Advanced health features.</p>
+                        <strong>From $799 or $33.29/mo. for 24 mo.**</strong>
+
+                        <div class="button">
+                            <p>Learn more</p>
+                        </div>
+                    </div>
+
+                    <div class="gold">
+                        <img src="imagenes apple watch/product_u2__hedpiz396nue_large.png" width="200">
+                        <h3>Apple Watch Ultra 2</h3>
+                        <p style="text-align: center;">The ultimate sports <br>
+                            and adventure watch.</p>
+                        <strong>From $799 or $66.58/mo. for 12 mo.*</strong>
+
+                        <div class="button">
+                            <p>Learn more</p>
+                        </div>
+                    </div>
 
 
 
+                </div>
+            </div>
+
+        </div>
+
+        <div class="novedades-title">
+            <h3>Why Apple is the best <br>
+                place to buy Apple Watch.</h3>
+        </div>
+
+        <div class="container-card" style="margin-bottom: 2rem; padding-right: 2rem;">
+            <article class="card" style="background-color: white;">
+                <section class="body-card" style="background-color: white;">
+                    <img src="imagenes ipad/creditcard_elevated_b70609ee9.svg" alt="" width="30px">
+                    <h3 class="title-card"> Pay over time, interest‑free. </h3>
+                    <p class="text">
+                        When you choose to check out with Apple Card Monthly Installments
+                    </p>
+
+                </section>
+            </article>
+
+            <article class="card" style="background-color: white;">
+                <section class="body-card" style="background-color: white;">
+                    <img src="imagenes ipad/arrow.2.squarepath.devices_elevated_e5bf7d99f.svg" alt="" width="30px">
+                    <h3 class="title-card">
+                        Save with Apple Trade In. </h3>
+                    <p class="text">
+                        Get up to $165 toward your next Apple Watch when you trade in an eligible device.
+                    </p>
+
+                </section>
+            </article>
+
+            <article class="card" style="background-color: white;">
+                <section class="body-card" style="background-color: white;">
+                    <img src="imagenes/icon_carrier_deals__bv35t3q8kbjm_large.png" alt="" width="30px">
+                    <h3 class="title-card" style="font-size: 1.75rem;"> Apple. Your one-stop shop for incredible carrier
+                        deals. </h3>
+                    <p class="text">
+                        Get up to $1000 in credit on a new iPhone with AT&T, Boost Mobile, T‑Mobile, or Verizon.
+                        Trade‑in may be required.14
+                    </p>
+
+                </section>
+            </article>
+
+            <article class="card" style="background-color: white;">
+                <section class="body-card" style="background-color: white;">
+                    <img src="imagenes ipad/app.applestore_elevated_60f367e42.svg" alt="" width="30px">
+                    <h3 class="title-card" style="font-size: 2rem;"> Explore a shopping experience designed around you.
+                    </h3>
+                    <p class="text">
+                        Use the Apple Store app to get a more personal way to shop.
+                    </p>
+
+                </section>
+            </article>
+
+            <article class="card" style="background-color: white;">
+                <section class="body-card" style="background-color: white;">
+                    <img src="imagenes ipad/person.macwindow_elevated_f95ad4d04.svg" alt="" width="30px">
+                    <h3 class="title-card"> Shop live with a Specialist. </h3>
+                    <p class="text">
+                        Let us guide you live over video and answer all of your questions.
+                    </p>
+
+                </section>
+            </article>
+
+        </div>
 
 
 
 
 
 
-<script src="https://kit.fontawesome.com/3629bdabce.js" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
-    }
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+        <script src="https://kit.fontawesome.com/3629bdabce.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
+
 </html>
