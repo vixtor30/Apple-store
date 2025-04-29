@@ -568,11 +568,13 @@ iframe {
     }
 
     .card{
-        height: 420px;
+        flex: 0 0 330px;
+        height: 395px;
     }
 
     .cards{
-        height: 360px;
+        flex: 0 0 330px;
+        height: 345px;
     }
 
     .text-arriba {
