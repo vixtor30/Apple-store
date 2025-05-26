@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+        .goog-te-banner-frame,
+        .goog-te-gadget {
+            display: none !important;
+        }
+
+
+        html {
+            font-size: 62.5%;
+            font-family: Poppins;
+            background-color: whitesmoke;
+            flex-wrap: wrap;
+
+        }
+
+        body {
+            margin: 0;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /**************
+ * UTILIDADES *
+ **************/
+
+        .container {
+            max-width: 120rem;
+            margin: 0 auto;
+        }
+
+        /**********
+ * HEADER *
+ **********/
+        .container-hero {
+            background-color: rgb(68, 68, 68);
+
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1.1rem 0;
+        }
+
+        .customer-support {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .customer-support i {
+            font-size: 2.8rem;
+        }
+
+        .content-customer-support {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .conteiner-logo {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+        }
+
+        .conteiner-logo i {
+            font-size: 3rem;
+
+        }
+
+
+        .conteiner-logo h1 a {
+            color: gray;
+            text-decoration: none;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+
+        }
+
+        .container-bag {
+            display: flex;
+            gap: 1rem;
+            cursor: pointer;
+        }
+
+        .container-bag .fa-bag-shopping {
+            font-size: 3rem;
+            padding: 2.4rem;
+            border-right: 1px solid grey;
+        }
+
+        /**********
+ * NAVBAR *
+ **********/
+        .container-navbar {
+            background-color: rgb(18, 18, 18);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+
+        }
+
+        .navbar .div .fa-bars {
+            display: flex;
+            color: gray;
+        }
+
+        .menu {
+            display: flex;
+            gap: 5.6rem;
+        }
+
+        .menu li {
+            list-style: none;
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: gainsboro;
+            font-weight: 450;
+            position: relative;
+
+
+        }
+
+        .menu a img {
+
+            display: flex;
+            margin-top: -6px;
+        }
+
+        .menu .fa-apple {
+            font-size: 2rem;
+            margin-top: -3px;
+            display: flex;
+            color: gainsboro;
+        }
+
+        .menu .fa_user {
+            font-size: 6rem;
+            margin-top: -3px;
+            display: flex;
+        }
+
+        .menu a:hover {
+            color: whitesmoke;
+            transition: all 1.s ease;
+            opacity: 0s;
+
+        }
+
+        .menu .fa-user:hover {
+            color: whitesmoke;
+            transition: all 1.s ease;
+            opacity: 0s;
+        }
+
+        .menu a::hover {
+            opacity: 1;
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 10rem;
+        }
+
+        .login input {
+            border: none;
+            border-radius: 10px;
+            width: 30rem;
+            height: 4rem;
+            text-align: center;
+
+
+        }
+
+        button {
+            background-color: rgb(69, 69, 69);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            width: 25rem;
+            height: 4rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .style_login {
+            flex-direction: column;
+            margin-left: 40rem;
+            margin-right: 40rem;
+            margin-top: 10rem;
+            margin-bottom: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .tittle_login {
+            color: white;
+            font-size: 1.75rem;
+            padding-top: 4rem;
+            margin-bottom: -5rem;
+        }
+
+        .register {
+            color: white;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1.75rem;
+        }
+
+        footer.pie {
+            background-color: #141414;
+            color: rgb(255, 255, 255);
+            padding: 50px 50px;
+        }
+
+        footer .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        footer .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        footer .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        footer .logotipo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        footer .redes span {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        footer .section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        footer .section div {
+            flex: 1 1 200px;
+            margin-bottom: 20px;
+        }
+
+        footer h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #dedede;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 1.50rem;
+        }
+
+        footer .derechos {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #ffffff;
+        }
+
+        hr {
+            border: 1px solid #444;
+            margin: 20px 0;
+        }
+
+        /* ----------- RESPONSIVE DESIGN ----------- */
+        @media (max-width: 768px) {
+
+
+            .navbar,
+            .hero {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 1rem;
+            }
+
+            .menu {
+                flex-wrap: wrap;
+                gap: 2rem;
+                justify-content: center;
+            }
+
+            .menu li a {
+                font-size: 1.3rem;
+            }
+
+            .conteiner-logo h1 a {
+                font-size: 2rem;
+            }
+
+            .container-bag .fa-bag-shopping {
+                padding: 1rem;
+                font-size: 2.5rem;
+            }
+
+            .style_login {
+                margin: 2rem;
+                padding: 2rem;
+                width: auto;
+            }
+
+            .login input,
+            button {
+                width: 100%;
+            }
+
+            .tittle_login {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            footer .header,
+            footer .section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            footer .section div {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .register {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .menu {
+                gap: 1.5rem;
+            }
+
+            .menu li a {
+                font-size: 1.1rem;
+            }
+
+            .conteiner-logo h1 a {
+                font-size: 1.8rem;
+            }
+
+            .login input,
+            button {
+                height: 1.5rem;
+                font-size: 1.3rem;
+            }
+
+            footer h2 {
+                font-size: 1.6rem;
+            }
+
+            footer p {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagenes/icon-apple.png" type="image/png">
+    <title>User</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-navbar">
+            <nav class="navbar container" translate="no">
+                <div class="container hero">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <i class="fa-brands fa-apple" style="color: gray;"></i>
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="Mac.html">Mac</a></li>
+                        <li><a href="iPad.html">iPad</a></li>
+                        <li><a href="iPhone.html">iPhone</a></li>
+                        <li><a href="Watch.html">Watch</a></li>
+                        <li><a href="user.html"> <i class="fa-solid fa-user"
+                                    style="color: grey; font-size: 1.5rem;"></i> </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+
+    <div>
+        <h1 style="text-align: center; margin-top: 5rem; margin-bottom: -4rem; font-size: 3rem;">welcome to the
+            sing in</h1>
+    </div>
+
+    <div class="style_login">
+        <div class="tittle_login">
+            <h1> Sing in</h1>
+        </div>
+
+        <div class="login">
+
+            <form action="register.php" method="POST" style="display: flex; flex-direction: column; gap: 2rem;">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="pasword" placeholder="Password" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit" style="justify-content: center;">Sign in</button>
+            </form>
+            <p style="color: white;">I have an account? <a href="login.html" style="color: gray;">Login</a></p>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    <footer class="pie">
+        <div class="header">
+            <div class="logo">
+                <img src="Imagenes/icon-apple.png" style="border-radius: 30px;" alt="Logo">
+                <p class="logotipo">Apple</p>
+            </div>
+            <div class="redes">
+                <span class="fb"><i class="fa-brands fa-facebook"></i></span>
+                <span class="tw"><i class="fa-brands fa-twitter"></i></span>
+                <span class="in"><i class="fa-brands fa-instagram"></i></span>
+                <span class="li"><i class="fa-brands fa-linkedin"></i></span>
+                <span class="yt"><i class="fa-brands fa-youtube"></i></span>
+            </div>
+        </div>
+        <hr>
+        <div class="section">
+            <div>
+                <h2>Company</h2>
+                <p>Independemt</p>
+                <p>Contact</p>
+                <p>About us</p>
+            </div>
+            <div>
+                <h2>Productos</h2>
+                <p>iPhone</p>
+                <p>iPad</p>
+                <p>Mac</p>
+                <p>Watch</p>
+            </div>
+            <div>
+                <h2>Services</h2>
+                <p>Apple tv</p>
+                <p>Apple care +</p>
+                <p>Apple Music</p>
+                <p>Apple Store</p>
+            </div>
+            <div>
+                <h2>account</h2>
+                <p>Perfil</p>
+                <p>profile</p>
+                <p>Settings</p>
+                <p>Logout</p>
+            </div>
+        </div>
+        <div class="derechos">
+            <p>&copy; 2025 Apple . All rights reserved.</p>
+            <p>Terms of use - Privacy policy</p>
+            <p>Cookies - Legal information</p>
+            <p style="font-size: 10px; padding-top: 2rem; color: gainsboro;">Apple Inc. is an American multinational
+                technology company headquartered in Cupertino, California, that designs, develops, and sells consumer
+                electronics, computer software, and online services.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/3629bdabce.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

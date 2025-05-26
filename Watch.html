@@ -484,7 +484,75 @@
 
         }
 
+        footer.pie {
+            margin-top: 5rem;
+            background-color: #141414;
+            color: rgb(255, 255, 255);
+            padding: 50px 50px;
+        }
 
+        footer .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        footer .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        footer .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        footer .logotipo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        footer .redes span {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        footer .section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        footer .section div {
+            flex: 1 1 200px;
+            margin-bottom: 20px;
+        }
+
+        footer h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #dedede;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 1.50rem;
+        }
+
+        footer .derechos {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #ffffff;
+        }
+
+        hr {
+            border: 1px solid #444;
+            margin: 20px 0;
+        }
 
         /* ---------------------------- */
         /* RESPONSIVE - TABLET (768px)  */
@@ -646,15 +714,15 @@
                 <div class="container hero">
                     <i class="fa-solid fa-bars"></i>
                     <ul class="menu">
-                        <i class="fa-brands fa-apple" style="color: gray;"></i>
+                         <i class="fa-brands fa-apple" style="color: gray;"></i>
                         <li><a href="index.html"> Home</a></li>
                         <li><a href="Mac.html">Mac</a></li>
                         <li><a href="iPad.html">iPad</a></li>
                         <li><a href="iPhone.html">iPhone</a></li>
                         <li><a href="Watch.html">Watch</a></li>
-
-                        <li><a href=""> <i class="fa-solid fa-bag-shopping" style="color: gray;"></i> </a></li>
-
+                        <li><a href="user.html"> <i class="fa-solid fa-user"
+                                    style="color: grey; font-size: 1.5rem;"></i> </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -872,7 +940,59 @@
 
 
 
-
+    <footer class="pie">
+            <div class="header">
+                <div class="logo">
+                    <img src="Imagenes/icon-apple.png" style="border-radius: 30px;" alt="Logo">
+                    <p class="logotipo">Apple</p>
+                </div>
+                <div class="redes">
+                    <span class="fb"><i class="fa-brands fa-facebook"></i></span>
+                    <span class="tw"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="in"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="li"><i class="fa-brands fa-linkedin"></i></span>
+                    <span class="yt"><i class="fa-brands fa-youtube"></i></span>
+                </div>
+            </div>
+            <hr>
+            <div class="section">
+                <div>
+                    <h2>Company</h2>
+                    <p>Independemt</p>
+                    <p>Contact</p>
+                    <p>About us</p>
+                </div>
+                <div>
+                    <h2>Productos</h2>
+                    <p>iPhone</p>
+                    <p>iPad</p>
+                    <p>Mac</p>
+                    <p>Watch</p>
+                </div>
+                <div>
+                    <h2>Services</h2>
+                    <p>Apple tv</p>
+                    <p>Apple care +</p>
+                    <p>Apple Music</p>
+                    <p>Apple Store</p>
+                </div>
+                <div>
+                    <h2>account</h2>
+                    <p>Perfil</p>
+                    <p>profile</p>
+                    <p>Settings</p>
+                    <p>Logout</p>
+                </div>
+            </div>
+            <div class="derechos">
+                <p>&copy; 2025 Apple . All rights reserved.</p>
+                <p>Terms of use - Privacy policy</p>
+                <p>Cookies - Legal information</p>
+                <p style="font-size: 10px; padding-top: 2rem; color: gainsboro;">Apple Inc. is an American multinational
+                    technology company headquartered in Cupertino, California, that designs, develops, and sells
+                    consumer electronics, computer software, and online services.</p>
+            </div>
+        </footer>
 
 
 
